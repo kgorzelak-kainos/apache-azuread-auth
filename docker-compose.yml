@@ -1,0 +1,9 @@
+version: '2'
+services:
+  azure-ad-apache:
+    build: .
+    container_name: azure-ad-apache
+    env_file: .env
+    ports:
+    - "11443:443"
+    - "1180:80"
