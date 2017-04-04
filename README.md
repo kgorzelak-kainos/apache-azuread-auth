@@ -31,3 +31,6 @@ The following environment variables needs to be set to make this work (in the .e
 
 4) The groups membership information (in claims) only contains groups object_ids (not group names). You can easy lookup those (ids) using the https://portal.azure.com .
 
+5) The claims are set also in the apache request environment variables however you will not be probably able to use them in the apache "if statements" (like setenvif) as they are set too late for that. 
+
+
