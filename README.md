@@ -15,7 +15,11 @@ This is a tutorial (+code) on how to setup the AzureAD authentication and author
 # Setup
 
 The following environment variables needs to be set to make this work (in the .env file):
-1) 
+
+1) TenantID - you will find this in the https://portal.azure.com (Dashboard > Azure Active Directory > Manage / Properties > Directory ID
+2) OIDCClientSecret - you will get it from the Application Registration Portal (https://apps.dev.microsoft.com/#/appList)
+3) OIDCClientID - you will get it from the Application Registration Portal (https://apps.dev.microsoft.com/#/appList)
+4) OIDCCryptoPassphrase - long random string to encrypt the session
 
 # Lessons learned:
 
